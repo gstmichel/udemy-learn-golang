@@ -24,7 +24,7 @@ func gen() <-chan int {
 	return c
 }
 
-func receive(c <-chan int){
+func receive(c <-chan int) {
 	for i := range c {
 		fmt.Println(i)
 	}

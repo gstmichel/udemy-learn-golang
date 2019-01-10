@@ -19,7 +19,7 @@ func main() {
 	}
 
 	bs, err := toJSON(p1)
-	if err != nil{
+	if err != nil {
 		fmt.Println(err)
 		return
 	}

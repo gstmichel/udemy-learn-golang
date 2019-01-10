@@ -7,19 +7,19 @@ import (
 func main() {
 	c := make(chan int)
 
-	go func(){
+	go func() {
 		c <- 1
 	}()
 
 	v, ok := <-c
-		fmt.Println(v, ok)
+	fmt.Println(v, ok)
 
 	close(c)
 
-	go func(){
+	go func() {
 		c <- 2
 	}()
 
 	v, ok = <-c
-		fmt.Println(v, ok)
+	fmt.Println(v, ok)
 }

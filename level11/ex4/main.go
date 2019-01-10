@@ -26,7 +26,7 @@ func main() {
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
 		return -1, sqrtError{
-			"50.2289 N","99.4656 W",errors.New("An error")}
+			"50.2289 N", "99.4656 W", errors.New("An error")}
 	}
 	return 42, nil
 }

@@ -38,5 +38,3 @@ func gen(q chan<- int) <-chan int {
 
 	return c
 }
-
-

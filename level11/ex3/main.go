@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 type customErr struct {
-
 }
 
 func (c customErr) Error() string {
@@ -15,6 +14,6 @@ func main() {
 	foo(c)
 }
 
-func foo(err error){
+func foo(err error) {
 	fmt.Printf("got error %v\n", err)
 }
